@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isdisplay test</title>
+    <style>
+        body{
+            margin: 0;
+            font-size:12px;
+            word-break: break-all;
+        }
+        h1{
+            margin:0;
+            height: 50px;
+        }
+        #wrap{
+            margin-right:50px;
+        }
+        .scroll-area-flex{
+            display: flex;
+        }
+        .scroll-area{
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+            overflow: scroll;
+             -ms-overflow-style:none;
+        }
+        .scroll-area.msOverflowNone{
+            -ms-overflow-style: none;
+        }
+        
+        .scroll-area-target{
+            background-color: red;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section id="wrap">
+        <!-- <h1>rikaaa-IntersectionWatcher</h1> -->
+
+        <section class="scroll-area-flex scroll-area-flex-1">
+            <section class="scroll-area scroll-area-1">
+                <div class="scroll-area-placeholder-1" style="height: 101%;">
+                    placeholder => height:101%;
+                </div>
+                <div class="scroll-area-target-1 scroll-area-target"></div>
+                <div class="scroll-area-placeholder-1-1" style="height: 101%;">
+                    placeholder => height:101%;
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-2">
+                <div class="scroll-area-placeholder-2" style="height: 100%;">
+                    placeholder => height: 100%;
+                </div>
+                <div class="scroll-area-target-2 scroll-area-target"></div>
+            </section>
+            <section class="scroll-area scroll-area-3">
+                <div class="scroll-area-placeholder-3" style="height:99%;">
+                    placeholder => height: 99%;
+                </div>
+                <div class="scroll-area-target-3 scroll-area-target"></div>
+            </section>
+        </section>
+
+        <section class="scroll-area-flex scroll-area-flex-2">
+            <style>
+                .scroll-area-flex-2 .scroll-area-target{
+                    margin-top:10px;
+                    border-top:10px solid green;
+                    padding-top:10px;
+                }
+            </style>
+            <section class="scroll-area scroll-area-4">
+                <div class="scroll-area-placeholder-4" style="height: 501px;">
+                    margin border upper
+                </div>
+                <div class="scroll-area-target-4 scroll-area-target">
+                    
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-5">
+                <div class="scroll-area-placeholder-5" style="height: 500px;">
+                   margin border intersect
+                </div>
+                <div class="scroll-area-target-5 scroll-area-target">
+                    
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-6">
+                <div class="scroll-area-placeholder-6" style="height:499px;">
+                   margin border under
+                   border border upper
+                </div>
+                <div class="scroll-area-target-6 scroll-area-target">
+                    
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-7">
+                <div class="scroll-area-placeholder-7" style="height: 490px;">
+                   border border intersect
+
+                </div>
+                <div class="scroll-area-target-7 scroll-area-target">
+                   
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-8">
+                <div class="scroll-area-placeholder-8" style="height: 489px;">
+                    border border under
+                    paddin border upper
+                </div>
+                <div class="scroll-area-target-8 scroll-area-target">
+                    
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-9">
+                <div class="scroll-area-placeholder-9" style="height:480px;">
+                    padding border intersect
+                </div>
+                <div class="scroll-area-target-9 scroll-area-target">
+                   
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-10">
+                <div class="scroll-area-placeholder-10" style="height: 479px;">
+                    padding border under
+                    content border upper
+                </div>
+                <div class="scroll-area-target-10 scroll-area-target">
+                   
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-11">
+                <div class="scroll-area-placeholder-11" style="height:470px;">
+                    content border Intersect
+                </div>
+                <div class="scroll-area-target-11 scroll-area-target">
+                  
+                </div>
+            </section>
+            <section class="scroll-area scroll-area-12">
+                <div class="scroll-area-placeholder-12" style="height:469px;">
+                    content border under
+                </div>
+                <div class="scroll-area-target-12 scroll-area-target">
+            
+                </div>
+                <div class="scroll-area-placeholder-12-1" style="height:101%;">
+                    content border under
+                </div>
+            </section>
+
+            <div>
+                
+            </div>
+        </section>        
+    </section>
+</body>
+</html>
