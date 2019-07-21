@@ -36,7 +36,6 @@ riw.observe(document.querySelector('.scroll-area-target-1'));
 ```
 
 ## Constractor arguments
----
 | argument | require | type | description |
 ---- | ---- | ---- | ----
 | callback | require | Function | Set the callback|
@@ -51,7 +50,6 @@ riw.observe(document.querySelector('.scroll-area-target-1'));
 
 
 ## Methods
-----
 | method | type |description |
 ---- | ---- | -----
 | rikaaaIntersectionWatcher.observe(targetElement) | Element | set the target of observed. |
@@ -59,9 +57,18 @@ riw.observe(document.querySelector('.scroll-area-target-1'));
 | rikaaaIntersectionWatcher.disconnect() | none | Ends the moniter of observed. |
 
 
-## Callback arguments 
-----
+## Callback arguments
 | argument | type　| description |
 ---- | ---- | ----
 | entry.target | Element | ElementNode of observed. |
 | entry.isIntersecting | boolean | The parameter of intersection. |
+
+## Browser Support
+- Google Chrome
+- Safari
+- Firefox
+- Edge
+- IE11 +
+
+## License
+MIT  © [rikaaa.org](http://rikaaa.org)
